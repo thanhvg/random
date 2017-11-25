@@ -57,8 +57,19 @@
   text-align: right;
   width: 5%;
   padding: 2px;
+  animation-duration: 6s;
+  animation-name: slidein;
 }
 .number > div {
   border-style: solid;
   border-width: thin;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }

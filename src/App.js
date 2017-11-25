@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Basket from './Basket';
 
-const MAX = 500;
+const MAX = 100;
 
 class App extends Component {
   constructor(props) {
@@ -50,6 +50,9 @@ class App extends Component {
               <Basket seeds={randomList}/>
             </div>
           </div>
+          <button onClick={() => this.forceUpdate()}>
+            Reset
+          </button >
         </div>
       </div>
     );
